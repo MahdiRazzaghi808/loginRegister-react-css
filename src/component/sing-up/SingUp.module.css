@@ -1,0 +1,282 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem auto 5rem auto;
+    width: 300px;
+
+}
+
+.header {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    position: relative;
+
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: contain;
+
+}
+
+.header>div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.header>div>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 400;
+
+
+}
+
+.header p {
+    font-size: 1.1rem;
+    line-height: 3;
+}
+
+.line {
+    height: 0.75px;
+    width: 250px;
+    background-color: #fff;
+    /* border-radius: 2px; */
+}
+
+.form {
+    padding: 4rem 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    background: #fff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.form label:not(.checkBox label) {
+    position: relative;
+    top: 20px;
+    transition: all 0.2s linear;
+}
+
+.form input:not([type="checkbox"]) {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.63);
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.1rem 0.1rem;
+}
+
+
+
+.form input:not([type="checkbox"]).active {
+    outline: none;
+    border: 2px solid #373be3;
+    border-radius: 5px;
+}
+
+
+
+.form label:not(.checkBox label).active {
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+}
+
+
+.form p {
+    margin-top: 0.5rem;
+    height: 8px;
+}
+
+.form span:not(.button span) {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    color: #fff;
+    border-radius: 2px;
+    background-color: rgba(228, 48, 48, 0.95);
+    box-shadow: 2px 1px 5px 1px rgb(209, 50, 50);
+}
+
+
+
+
+
+.checkBox div {
+    display: flex;
+}
+
+.checkBox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-left: 0.5rem;
+    appearance: none;
+}
+
+.checkBox input[type="checkbox"]:checked {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #373be3;
+    background-color: #373be3;
+    border-radius: 0.25rem;
+}
+
+.button {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+    color: #fff;
+    background-color: #373be3;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button span {
+    font-size: 1.1rem;
+    color: gray;
+    margin-right: 0.5rem;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+@keyframes move1 {
+    0% {
+        transform: translateX(28rem);
+        color: #373be3;
+
+
+    }
+
+    100% {
+        transform: translateX(0);
+        color: #fff;
+    }
+}
+
+
+
+
+@keyframes move2 {
+    0% {
+        transform: translateX(35rem);
+        color: #373be3;
+
+
+    }
+
+    100% {
+        transform: translateX(0);
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 456px) {
+    .wrapper {
+        width: 430px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        flex-direction: row;
+        width: 900px;
+
+    }
+
+    .header {
+        flex-basis: 50%;
+        height: 100%;
+    }
+
+    .header h1 {
+        transform: translateX(0);
+        animation: move1 1s linear;
+    }
+
+    .form {
+        flex-basis: 50%;
+        gap: 0;
+        justify-content: space-between;
+
+    }
+
+    .header img {
+        border-radius: 0;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .form {
+        border-radius: 0;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 1100px;
+    }
+
+    .header h1 {
+        transform: translateX(0);
+        animation: move2 1s linear;
+    }
+
+    .form {
+        justify-content: center;
+        gap: 2.7rem;
+    }
+}
