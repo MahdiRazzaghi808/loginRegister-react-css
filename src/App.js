@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
 
@@ -13,8 +13,6 @@ function App() {
       <Routes>
         <Route path="/SingIn" element={<SingIn />} />
         <Route path="/SingUp" element={<SingUp />} />
-        <Route path="/*" element={<Navigate to="/SingIn"/>} />
-
       </Routes>
     </div>
   );
