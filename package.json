@@ -1,5 +1,7 @@
 {
   "name": "my-app",
+  "homepage": "https://mahdirazzaghi808.github.io/loginRegister-react-css/",
+
   "version": "0.1.0",
   "private": true,
   "dependencies": {
