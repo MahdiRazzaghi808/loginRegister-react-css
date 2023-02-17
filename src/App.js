@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 
 
@@ -11,8 +11,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/SingIn" element={<SingIn />} />
-        <Route path="/SingUp" element={<SingUp />} />
+        <Route path="/loginRegister-react-css/SingIn" element={<SingIn />} />
+        <Route path="loginRegister-react-css/SingUp" element={<SingUp />} />
+        <Route path="/*" element={<Navigate to="/loginRegister-react-css/SingIn"/>} />
       </Routes>
     </div>
   );
