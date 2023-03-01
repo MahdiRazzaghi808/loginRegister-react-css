@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://mahdirazzaghi808.github.io/loginRegister-react-css/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,18 +13,14 @@
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.1",
-    "styled-components": "^5.3.6",
-    "web-vitals": "^2.1.4"
+    "styled-components": "^5.3.6"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MahdiRazzaghi808/loginRegister-react-css"
-  },
+ 
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "webpack",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -44,8 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "webpack-cli": "^5.0.1"
   }
 }
