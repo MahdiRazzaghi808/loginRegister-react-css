@@ -166,7 +166,7 @@ const SingUp = () => {
                     <button onClick={SubmitHandler}>Register</button>
                     <div>
                         <span>or</span>
-                        <Link to="SingIn">Sing In</Link>
+                        <Link to="SingUp">Sing In</Link>
                     </div>
 
                 </div>
