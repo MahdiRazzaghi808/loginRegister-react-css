@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="loginRegister-react-css/SingIn" element={<SingIn />} />
-        <Route path="loginRegister-react-css/SingUp" element={<SingUp />} />
-        <Route path="/*" element={<Navigate to="loginRegister-react-css/SingIn"/>} />
+        <Route path="SingIn" element={<SingIn />} />
+        <Route path="SingUp" element={<SingUp />} />
+        <Route path="/*" element={<Navigate to="SingIn"/>} />
       </Routes>
     </div>
   );
