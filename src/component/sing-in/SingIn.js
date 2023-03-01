@@ -124,7 +124,7 @@ const SingIn = () => {
                 <div className={styles.button}>
 
 
-                    <Link to="SingUp">Sing Up</Link>
+                    <Link to="/SingUp">Sing Up</Link>
 
                     <button onClick={submitHandler}>Login</button>
                 </div>
