@@ -15,6 +15,17 @@
     <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
   
     <title>React App</title>
+    <script>
+      $(function() {
+          if (location.href != redirect) {
+              $('#message').html('Coming at you from')
+              $('#message-detail').html(location.href)
+          } else {
+            $('#message').html('')
+            $('#message-detail').html('Still here at the index.html file')
+          }
+      })
+    </script>
   </head>
   <body>
    
